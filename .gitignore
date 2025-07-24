@@ -1,0 +1,29 @@
+# 二进制文件
+bin/
+service_monitor
+*.exe
+
+# 日志文件
+*.log
+
+# Go 相关
+go.sum
+
+# IDE 相关
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.temp
+
+# 配置文件备份
+*.bak
+*.backup 
+Requirements.md
