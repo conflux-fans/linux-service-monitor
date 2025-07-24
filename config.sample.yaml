@@ -1,0 +1,31 @@
+# 测试环境配置文件
+kurtosis:
+  # Kurtosis enclave 监控配置 (测试环境可以留空)
+  enclaves: ["op-eth"]
+  # 监控间隔时间（秒）
+  interval: 5
+  # 重启最大尝试次数
+  maxRestartAttempts: 3
+
+process:
+  # 进程监控配置 (测试一些常见进程)
+  processes:
+    - "systemd"
+  # 监控间隔时间（秒）
+  interval: 15
+
+# 日志配置
+log:
+  level: "info"
+  file: "monitor.log"
+
+# 钉钉报警配置（测试环境可以启用）
+alert:
+  customTags: [Alert, your_tag]
+  channels:
+    default:
+      platform: dingtalk      
+      webhook: https://oapi.dingtalk.com/robot/send?access_token=your_token
+      secret: ""
+      atMobiles: []
+      isAtAll: false

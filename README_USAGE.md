@@ -28,7 +28,13 @@
 
 ## 安装和部署
 
-### 方法一：使用安装脚本（推荐）
+### 方法一：只安装 binary
+
+```
+go install github.com/conflux-fans/linux-service-monitor
+```
+
+### 方法二：使用脚本自动化服务（推荐）
 
 ```bash
 # 给安装脚本执行权限
@@ -58,34 +64,11 @@ sudo systemctl daemon-reload
 
 ## 配置说明
 
-配置文件使用 YAML 格式，主要包含以下部分：
-
-### Kurtosis 配置
-```yaml
-kurtosis:
-  enclaves:
-    - "enclave-name-1"
-    - "enclave-name-2"
-  interval: 30              # 检查间隔（秒）
-  max_restart_attempts: 3   # 最大重启尝试次数
-```
-
-### 进程监控配置
-```yaml
-process:
-  processes:
-    - "nginx"
-    - "redis-server"
-    - "postgres"
-  interval: 60              # 检查间隔（秒）
-```
-
-### 日志配置
-```yaml
-log:
-  level: "info"            # 日志级别
-  file: "monitor.log"      # 日志文件路径
-```
+示例文件为 config.sample.yaml。 配置文件使用 YAML 格式，主要包含以下部分：
+- Kurtosis 配置
+- 进程监控配置
+- 日志配置
+- 报警（Alert）配置
 
 ## 使用方法
 
