@@ -5,11 +5,12 @@ import (
 	"fmt"
 	"os"
 	"os/signal"
-	"service_monitor/config"
-	"service_monitor/logger"
-	"service_monitor/monitor"
 	"sync"
 	"syscall"
+
+	"github.com/conflux-fans/service-monitor/config"
+	"github.com/conflux-fans/service-monitor/logger"
+	"github.com/conflux-fans/service-monitor/monitor"
 
 	"github.com/nft-rainbow/rainbow-goutils/utils/alertutils"
 )

@@ -31,7 +31,7 @@
 ### 方法一：只安装 binary
 
 ```
-go install github.com/conflux-fans/linux-service-monitor
+go install github.com/conflux-fans/service-monitor
 ```
 
 ### 方法二：使用脚本自动化服务（推荐）

@@ -5,9 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"service_monitor/config"
-	"service_monitor/logger"
-
+	"github.com/conflux-fans/service-monitor/config"
+	"github.com/conflux-fans/service-monitor/logger"
 	"github.com/nft-rainbow/rainbow-goutils/utils/alertutils"
 )
 

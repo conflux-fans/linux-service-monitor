@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"os/exec"
 	"regexp"
-	"service_monitor/config"
-	"service_monitor/logger"
 	"strings"
 	"time"
 
+	"github.com/conflux-fans/service-monitor/config"
+	"github.com/conflux-fans/service-monitor/logger"
 	"github.com/nft-rainbow/rainbow-goutils/utils/alertutils"
 )
 
